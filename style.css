@@ -1,0 +1,112 @@
+:root{
+    --accent-color: #f5a841;
+}#f5a841
+
+section[class^="container"]{
+    padding: 4rem 2rem;
+}
+@media screen and (min-width:1024px){
+    section[class^="container"]{
+        padding: 4rem;
+    }
+    nav [class^="container"]{
+        padding: 0 4rem;
+    }    
+}
+
+section:not(:first-of-type){
+    text-align: center;
+}
+section:nth-child(2n){
+    background-color: #181C14;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+a:hover{
+    color: var(--accent-color);
+}
+section .card, .btn-outline-dark{
+    border: 2px solid #000000;
+    box-shadow: 4px 4px #000000;
+    transition: all 0.4s;
+}
+.btn-outline-dark:hover{
+    box-shadow: 4px 4px var(--accent-color);
+}
+
+.navbar{
+    color: #ffffff;
+    background-color: #697565;
+
+}
+
+.navbar-nav .nav-link{
+    color: #ffffff;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+.navbar-nav .nav-link:hover{
+    color: var(--accent-color);
+}
+
+@media screen and (min-width:1024px){
+    .navbar-nav .nav-item{
+        padding: 0 1rem;
+    }
+    .navbar-brand{
+        font-size: 1.5rem;
+    }
+}
+
+section.hero, .section.education, section.contact, section.project{
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+@media screen and (min-width: 576px){
+    section.hero{
+        text-align: center;
+    }
+    section.hero img{
+        width: 70%;
+    }
+}
+
+section.education i{
+    font-size: 2rem;
+    margin: 1rem auto 0;
+    border: 2px solid #000000;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+}
+section.education, section.hero, section.project{
+    background-color:  #181C14;
+    color: white;
+}
+
+
+section .card{
+    max-width: 22rem;
+    margin-inline: auto;
+
+}
+
+section.project .card{
+    max-width: 17rem;
+    text-align: left;
+}
+section.project .card img{
+    max-width: 70%;
+    margin: 1rem auto;
+}
+
+section.contact .social-media a{
+    -webkit-padding-start: 0 .5rem;
+    font-size: 1.3rem;
+}
